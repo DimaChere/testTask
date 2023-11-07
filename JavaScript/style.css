@@ -22,7 +22,7 @@
 }
 
 #back-control {
-  rotate: 180deg;
+  transform: rotateY(180deg);
 }
 
 .container {

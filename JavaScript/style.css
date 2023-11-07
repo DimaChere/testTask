@@ -2,28 +2,36 @@
   text-align: center;
 }
 
+.count-error {
+  display: none;
+  font-size: 30px;
+  color: red;
+}
+
 .main {
   margin: 0 auto;
 }
 
 .control {
-  background-color: transparent;
   border: 0;
+  background-color: transparent;
 }
 
 .control:hover {
   cursor: pointer;
 }
 
+#back-control {
+  rotate: 180deg;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px auto;
   width: 600px;
   height: 600px;
-  background-color: rgba(230, 230, 230, 0.3);
-  border-radius: 20px;
+  margin: 10px auto;
 }
 
 .dots-container {
@@ -55,13 +63,15 @@
   user-select: none;
 }
 
-.slider {
+.slide-contaniner {
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  height: 600px;
+  height: 500px;
   width: 500px;
+  overflow: hidden;
+  background-color: rgba(230, 230, 230, 0.3);
+  border-radius: 20px;
 }
 
 #slide {

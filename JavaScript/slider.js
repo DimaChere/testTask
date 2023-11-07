@@ -9,6 +9,18 @@ const ammountOfSlides = slides.length;
 let positon = 0;
 let isActive = false;
 
+const speed = 1;
+
+// error check
+
+if (slides.length > 10 || slides.length < 1) {
+  const slider = document.getElementById("slider");
+  const errorMessage = document.getElementById("count-error");
+
+  slider.style.display = "none";
+  errorMessage.style.display = "block";
+}
+
 // create dots
 
 const dotsContainer = document.getElementById("dots-container");
@@ -61,21 +73,22 @@ for (let i = 0; i < ammountOfSlides; i++) {
 
       const prevPos = positon;
       positon = i;
-
-      dots[prevPos].style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-      dots[positon].style.backgroundColor = "rgba(0, 128, 0, 0.5)";
-      if (prevPos > positon) {
-        moveLeft(prevPos, positon);
+      if (prevPos !== positon) {
+        dots[prevPos].style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        dots[positon].style.backgroundColor = "rgba(0, 128, 0, 0.5)";
+        if (prevPos > positon) {
+          moveLeft(prevPos, positon);
+        } else {
+          moveRight(prevPos, positon);
+        }
       } else {
-        moveRight(prevPos, positon);
+        isActive = false;
       }
     }
   });
 }
 
 // moving
-
-const speed = 8;
 
 function moveLeft(now, next) {
   let nowPos = 0,

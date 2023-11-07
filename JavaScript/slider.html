@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="text.css" />
   </head>
   <body>
-    <header class="header"><h1 class="text-68">Слайдер</h1></header>
-    <main class="main">
+    <header class="header">
+      <h1 class="text-68">Слайдер</h1>
+      <p id="count-error" class="count-error">
+        Количество слайдов меньше 1 или больше 10
+      </p>
+    </header>
+
+    <main id="slider" class="main">
       <div class="container">
         <button class="control" id="back-control">
-          <img src="./public/assets/icons/arrow_back.svg" alt="Back" />
+          <img src="./public/assets/icons/arrow.svg" alt="Back" />
         </button>
-        <div class="slider">
+        <div class="slide-contaniner">
           <img src="./public/assets/img/slide1.png" class="slide" />
           <img src="./public/assets/img/slide2.png" alt="excel" class="slide" />
           <img
@@ -38,7 +44,7 @@
           <img src="./public/assets/img/slide9.png" alt="word" class="slide" />
         </div>
         <button class="control" id="forward-control">
-          <img src="./public/assets/icons/arrow_forward.svg" alt="Forward" />
+          <img src="./public/assets/icons/arrow.svg" alt="Forward" />
         </button>
       </div>
       <div id="dots-container" class="dots-container"></div>

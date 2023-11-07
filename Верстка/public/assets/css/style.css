@@ -31,7 +31,7 @@ button:hover {
   cursor: pointer;
 }
 
-.maxWidth {
+.max-width {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -435,56 +435,6 @@ body {
 }
 
 /* ABOUT - PERCENTS --------------------------------------------------------------------------*/
-/* 
-.about .percents__about {
-  margin-top: 100px;
-  padding: 40px 0px;
-  background-color: var(--Primary_01, #954ced);
-}
-
-.container__percents__about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0px 16px;
-}
-
-.percent-info {
-  display: flex;
-  align-items: center;
-}
-
-.percent-info h3 {
-  margin: 0 20px 0 0;
-}
-
-@media (min-width: 750px) and (max-width: 1440px) {
-  .percent-info {
-    padding: 0 calc(0px + (100 - 0) * (100vw - 750px) / (1440 - 320));
-  }
-}
-
-@media (min-width: 1440px) {
-  .percent-info {
-    padding: 0 100px;
-  }
-}
-
-@media (min-width: 750px) {
-  .percent-info {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .container__percents__about {
-    flex-direction: row;
-  }
-
-  .percent-info h3 {
-    margin: 0 16px 0 0;
-  }
-} */
 
 .about .percents__about {
   margin-top: 100px;
@@ -1441,6 +1391,8 @@ content__info-block-3 {
 
 .bg-light-button:active {
   background-color: var(--Primary_00, #7b31d4);
+  padding: 16px 30px;
+  border: 0;
 }
 
 .bg-light-button:active::before {

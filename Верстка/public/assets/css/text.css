@@ -1,0 +1,400 @@
+:root {
+  --Grayscale_00: #000000;
+  --Grayscale_01: #181818;
+  --Grayscale_02: #444444;
+  --Grayscale_03: #b9b9b9;
+  --Grayscale_04: #cfcfcf;
+  --Grayscale_05: #e4e4e4;
+  --Grayscale_06: #f5f5f5;
+  --Grayscale_07: #ffffff;
+  --Grayscale-Black: #070707;
+  --Primary_00: #7b31d4;
+  --Primary_01: #954ced;
+  --Primary_02: #a64ced;
+  --Primary_03: #ba8bf3;
+  --Primary_04: #954ced33;
+  --Secondary_01: #2fdbbc;
+  --Secondary_02: #ffaa4c;
+  --Secondary_03: #c1db2f;
+  --Additional_01: #ff6c2d;
+  --Additional_02: #ec1211;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Light.woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Medium.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-SemiBold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Bold.woff2");
+  font-weight: 700;
+}
+
+* {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+
+.header-links {
+  font-size: 16px;
+  font-style: normal;
+  color: var(--Grayscale_00, #000);
+}
+
+.selected__header-links {
+  background-color: var(--Grayscale_01);
+  color: var(--Grayscale_07, #fff);
+  border-radius: 20px 20px 0 0;
+}
+
+.budss-text {
+  color: var(--grayscale-07, #fff);
+  text-align: center;
+  font-feature-settings: "ss07" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on,
+    "ss01" on, "numr" on, "dnom" on;
+  font-family: Outfit;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 45.946% */
+  text-transform: lowercase;
+}
+
+.text-simple-S4 {
+  position: relative;
+  z-index: 1;
+  color: var(--Grayscale_07, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#menu a {
+  display: block;
+  color: var(--Grayscale_07, #fff);
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-heading-T2-T6 {
+  color: var(--Grayscale_07, #fff);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106%; /* 101.76px */
+}
+
+.text-simple-S6-B2 {
+  color: var(--grayscale-07, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+@media (max-width: 720px) {
+  .text-simple-S6-B2 {
+    line-height: normal;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+  .budss-text {
+    font-size: calc(29px + (37 - 29) * (100vw - 320px) / (1440 - 320));
+    line-height: calc(13.6px + (17 - 13.6) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-heading-T2-T6 {
+    font-size: calc(40px + (96 - 40) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-simple-S6-B2 {
+    font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1440 - 320));
+  }
+}
+
+/* ABOUT --------------------------------------------------------------------------------------*/
+
+.text-simple-S1-S2 {
+  z-index: 1;
+  position: relative;
+  color: var(--Grayscale_07, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-heading-T4-T7 {
+  color: var(--Grayscale_07, #fff);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106%;
+}
+
+.text-simple-S3-B2 {
+  color: var(--Grayscale_07, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.text-simple-T1-T4 {
+  font-feature-settings: "liga" off;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106%;
+  /* text-wrap: nowrap; */
+  white-space: nowrap;
+}
+
+.text-color-S01 {
+  color: var(--Secondary_01, #2fdbbc);
+}
+
+.text-color-P02 {
+  color: var(--primary-02, #a64ced);
+}
+
+.text-color-S02 {
+  color: var(--secondary-02, #ffaa4c);
+}
+
+.text-color-transparent {
+  color: var(--Grayscale_01, #181818);
+  text-shadow: 0 0 1px var(--Grayscale_02, #444);
+}
+
+.text-simple-S2-S4 {
+  color: var(--Grayscale_07, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+  .text-simple-S1-S2 {
+    font-size: calc(24px + (36 - 24) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-heading-T4-T7 {
+    font-size: calc(32px + (48 - 32) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-simple-S3-B2 {
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-simple-T1-T4 {
+    font-size: calc(48px + (128 - 48) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-simple-S2-S4 {
+    font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1440 - 320));
+  }
+}
+
+@media (max-width: 720px) {
+  .text-simple-S1-S2 {
+    line-height: 120%;
+  }
+
+  .text-simple-S3-B2 {
+    font-style: normal;
+  }
+}
+
+/* WHY BUDSS -------------------------------------------------------------------------------*/
+
+.text-heading-T3-T6 {
+  color: var(--Grayscale_07, #fff);
+  font-feature-settings: "liga" off;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106%;
+}
+
+.text-heading-T5-T7 {
+  color: var(--Grayscale_00, #000);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-color-G00 {
+  color: var(--Grayscale_00, #000);
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+  .text-heading-T3-T6 {
+    font-size: calc(40px + (64 - 40) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .text-heading-T5-T7 {
+    font-size: calc(32px + (48 - 32) * (100vw - 320px) / (1440 - 320));
+  }
+}
+
+@media (max-width: 720px) {
+  .text-heading-T5-T7 {
+    line-height: 106%;
+    font-weight: 700;
+  }
+}
+
+/* CONCLUSION - ABOUT --------------------------------------------------------------------------*/
+
+.text-simple-S6 {
+  color: var(--grayscale-00, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+/* FOOTER --------------------------------------------------------------------------------------*/
+
+.text-simple-S5 {
+  color: var(--Grayscale_07, #fff);
+
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-simple-B5 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.text-link-B6 {
+  color: var(--Grayscale_03, #b9b9b9);
+  text-align: right;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+
+/* COOKIE --------------------------------------------------------------------------------------*/
+
+.text-simple-S7 {
+  color: #383838;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+/* FORM --------------------------------------------------------------------------------------*/
+
+.text-simple-B3 {
+  color: var(--Grayscale-Black, #070707);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.text-link-B5 {
+  color: var(--Primary_01, #954ced);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+
+.text-color-G03 {
+  color: var(--Grayscale_03, #b9b9b9);
+}
+
+.text-simple-B4 {
+  overflow: hidden;
+  color: var(--grayscale-black, #070707);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.text-simple-B7 {
+  color: var(--Additional_02, #ec1211);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.text-simple-S3-S6 {
+  color: var(--Grayscale_02, #444);
+  text-align: center;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+
+.text-color-P02 {
+  color: var(--Primary_02, #a64ced);
+}
+
+.text-simple-B2 {
+  color: var(--Additional_02, #ec1211);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+  .text-simple-S3-S6 {
+    font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1440 - 320));
+  }
+}

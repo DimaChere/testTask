@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="text.css" />
+  </head>
+  <body>
+    <header class="header"><h1 class="text-68">Слайдер</h1></header>
+    <main class="main">
+      <div class="container">
+        <button class="control" id="back-control">
+          <img src="./public/assets/icons/arrow_back.svg" alt="Back" />
+        </button>
+        <div class="slider">
+          <img src="./public/assets/img/slide1.png" class="slide" />
+          <img src="./public/assets/img/slide2.png" alt="excel" class="slide" />
+          <img
+            src="./public/assets/img/slide3.png"
+            alt="github"
+            class="slide"
+          />
+          <img src="./public/assets/img/slide4.png" alt="jest" class="slide" />
+          <img src="./public/assets/img/slide5.png" alt="js" class="slide" />
+          <img src="./public/assets/img/slide6.png" alt="node" class="slide" />
+          <img
+            src="./public/assets/img/slide7.png"
+            alt="react native"
+            class="slide"
+          />
+          <img
+            src="./public/assets/img/slide8.png"
+            alt="vs code"
+            class="slide"
+          />
+          <img src="./public/assets/img/slide9.png" alt="word" class="slide" />
+        </div>
+        <button class="control" id="forward-control">
+          <img src="./public/assets/icons/arrow_forward.svg" alt="Forward" />
+        </button>
+      </div>
+      <div id="dots-container" class="dots-container"></div>
+    </main>
+    <script src="./slider.js"></script>
+  </body>
+</html>

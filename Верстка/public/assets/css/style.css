@@ -1329,7 +1329,7 @@ content__info-block-3 {
 .bg-dark-button:active {
   position: relative;
   padding: 14px 28px;
-  border: 2px solid var(--Primary_01);
+  border: 2px solid var(--Primary_02, #a64ced);
   outline: 0;
   border-radius: 16px;
   overflow: hidden;
@@ -1343,6 +1343,7 @@ content__info-block-3 {
 .bg-dark-button:disabled {
   border: 2px solid var(--Grayscale_03, #b9b9b9);
   color: var(--Grayscale_03, #b9b9b9);
+  outline: 0;
 }
 
 .bg-dark-button:disabled::before {

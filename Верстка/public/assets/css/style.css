@@ -888,6 +888,12 @@ content__info-block-3 {
   }
 }
 
+@media (max-width: 750px) {
+  .about__conclusion div {
+    margin-bottom: 20px;
+  }
+}
+
 /* CONCLUSION - COMPANY-SET --------------------------------------------------------------------*/
 
 .company-set {

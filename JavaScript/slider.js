@@ -9,7 +9,7 @@ const ammountOfSlides = slides.length;
 let positon = 0;
 let isActive = false;
 
-const speed = 1;
+const speed = 8;
 
 // error check
 

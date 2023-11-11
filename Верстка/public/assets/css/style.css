@@ -1099,18 +1099,8 @@ content__info-block-3 {
   padding: 30px 30px;
   border-radius: 16px;
   background-color: var(--Grayscale_07, #fff);
-  animation: cookie-animation 1.5s;
-  animation-delay: 1s;
-}
-
-@keyframes cookie-animation {
-  0% {
-    transform: translateY(150%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
+  transition: transform 1s ease-out;
+  transform: translateY(150%);
 }
 
 .content__cookie p {

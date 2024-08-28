@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slider</title>
+        <link rel="stylesheet" href="./Slider/public/assets/css/style.css" />
+        <link rel="stylesheet" href="./Slider/public/assets/css/text.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="text-68">Слайдер</h1>
+            <p id="count-error" class="count-error">
+                Количество слайдов меньше 1 или больше 10
+            </p>
+        </header>
+
+        <main id="slider" class="main">
+            <div class="container">
+                <button class="control" id="back-control">
+                    <img
+                        src="./Slider/public/assets/icons/arrow.svg"
+                        alt="Back"
+                    />
+                </button>
+                <div class="slide-contaniner">
+                    <img
+                        src="./Slider/public/assets/img/slide1.png"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide2.png"
+                        alt="excel"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide3.png"
+                        alt="github"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide4.png"
+                        alt="jest"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide5.png"
+                        alt="js"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide6.png"
+                        alt="node"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide7.png"
+                        alt="react native"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide8.png"
+                        alt="vs code"
+                        class="slide"
+                    />
+                    <img
+                        src="./Slider/public/assets/img/slide9.png"
+                        alt="word"
+                        class="slide"
+                    />
+                </div>
+                <button class="control" id="forward-control">
+                    <img
+                        src="./Slider/public/assets/icons/arrow.svg"
+                        alt="Forward"
+                    />
+                </button>
+            </div>
+            <div id="dots-container" class="dots-container"></div>
+        </main>
+        <script src="./Slider/public/assets/js/slider.js"></script>
+    </body>
+</html>
